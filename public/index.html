@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .container {
+    
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50px 100px 100px 100px 30px;
+      grid-gap: 4px;
+    }
+
+    .menu {
+      background: rgb(3, 113, 150);
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .sidebar {
+      background: rgb(58, 184, 216);
+      grid-row-start: 2;
+      grid-row-end: 5;
+      grid-column-end: 1/2;
+    }
+
+    .konten {
+      font-size: 18px;
+      padding-left: 1em;
+      background: rgb(192, 221, 255);
+      grid-column: 2/5;
+    }
+
+    .footer {
+      background: rgb(3, 113, 150);
+      grid-column: 1/5;
+      grid-row: 5/5;
+      font-size: 20px;
+    }
+
+  #logo{
+   margin: 10dp;
+    max-width: 45px;
+    max-height: 45px;
+  }
+
+  #me{
+    max-width: 200px;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class='menu'><img id="logo" src="images/touchicon-180.png" alt="Icon"></div>
+    <div class='sidebar'>SideBar <br><img id="me" src="images/me.jpg" alt="me"></div>
+    <div class='konten'><a href="https://bryan-agam.firebaseapp.com/project1">Menjumlahkan dua angka</a></div>
+    <div class='konten'>Lokasi Istimewa dengan Mapbox</div>
+    <div class='konten'>Konten 3</div>
+    <div class='footer' style="font-weight:bold; text-align: center;">Bryan Agam</div>
+  </div>
+</body>
+</html>
